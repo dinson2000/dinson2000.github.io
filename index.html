@@ -8,6 +8,8 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     
+    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
@@ -16,6 +18,7 @@
     
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
     <script src="js/script.js"></script>
     
     <title>Wedding WebApp</title>
@@ -92,22 +95,22 @@
           
           
           <div>
-                <img id="btn2" data-toggle="modal" data-target="#exampleModal1" data-backdrop="false" data-u="image" src="image_logo/flower02.png" />
+                <img id="chaak" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal1" data-u="image" src="image_logo/chaak.png" />
             </div>
           <div>
-                <img id="btn2" data-toggle="modal" data-target="#exampleModal2" data-backdrop="false" data-u="image" src="image_logo/flower03.png" />
+                <img id="mehendi" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal2" data-u="image" src="image_logo/mehendi.png" />
             </div>
           <div>
-                <img id="btn2" data-toggle="modal" data-target="#exampleModal3" data-backdrop="false" data-u="image" src="image_logo/flower04.png" />
+                <img id="pravesh" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal3" data-u="image" src="image_logo/pravesh.png" />
             </div>
           <div>
-                <img id="btn2" data-toggle="modal" data-target="#exampleModal4" data-backdrop="false" data-u="image" src="image_logo/flower05.png" />
+                <img id="tilak" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal4" data-u="image" src="image_logo/tilak.png" />
             </div>
           <div>
-                <img id="btn2" data-toggle="modal" data-target="#exampleModal5" data-backdrop="false" data-u="image" src="image_logo/flower06.png" />
+                <img id="fere" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal5" data-u="image" src="image_logo/fere.png" />
             </div>
            <div>
-                <img id="btn2" data-toggle="modal" data-target="#exampleModal6" data-backdrop="false" data-u="image" src="image_logo/flower01.png" />
+                <img id="haldi" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal6" data-u="image" src="image_logo/haldi.png" />
             </div>                
         </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation composer</a>
         
@@ -116,15 +119,15 @@
     <script type="text/javascript">jssor_1_slider_init();</script>
 
     
-    <button type="button" class="mt-2  d-block btn" id="btn1">
-      <div class="container1">
-        <img src="./image_logo/dc4.png" class="ml-2" style="height: 80px;width: 100%;" alt="">
+    <!-- <button type="button"   class="mt-2  d-block btn" > -->
+      <div id="download_card" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal10" class="container1">
+        <img style="height: 90px;width:100%;" src="./image_logo/dc4.png">
         <div class="text">
 
         <p class="font-weight-bold purple" style="font-size:25px;font-style: italic;">Download Card</p>
       </div>
       </div>
-    </button>
+    <!-- </button> -->
 
 
 
@@ -140,41 +143,7 @@
 
 
 <!-- Modal 1 -->
-<div class="modal fade"  id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <!-- Modal 1 -->
-      <div class="modal-body">
-        <div class="container">
-          <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
-            
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
-          </div>
-          <div class="top-left1">
-            <p class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
-          </div>
-          <div class="top-left2">
-            <p  class="pink" style="font-size: 5.5vw;">7 p.m onwards</p>
-          </div>
-
-          <div class="centered"><p class="purple" style="font-size: 7vw;">Venue</p></div>
-          <div class="centered1"><p  class="pink" style="font-size: 5.5vw;">Babu ka bagh,Moe k ghar ke bagal m choti wali gali main ghuse jana.</p></div>
-               <div class="centered3">
-                  <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
-                    <img style="height:60px;width:70px;" src="background/pin.png" alt=""></a>
-                </div>
-          <div class="bottom-left"><p class="mb-0 purple" style="font-size: 6.5vw;">Contact</p></div>
-          <div  class="bottom-left1"><a class="mb-0 pink" href="tel:9351758536"  style="font-size: 5vw;"><i style="font-size:3.5vw;" class="fas fa-phone-alt"></i> 9351758536</a></div>
-          
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-<!-- Modal 2 -->
-<div class="modal fade"  id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
@@ -208,7 +177,7 @@
     </div>
   </div>
 </div>
-<!-- Modal 3 -->
+<!-- Modal 2 -->
 <div class="modal fade"  id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -243,7 +212,7 @@
     </div>
   </div>
 </div>
-<!-- Modal 4 -->
+<!-- Modal 3 -->
 <div class="modal fade"  id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -278,7 +247,7 @@
     </div>
   </div>
 </div>
-<!-- Modal 5 -->
+<!-- Modal 4 -->
 <div class="modal fade"  id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -313,7 +282,7 @@
     </div>
   </div>
 </div>
-<!-- Modal 6 -->
+<!-- Modal 5 -->
 <div class="modal fade"  id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -348,7 +317,7 @@
     </div>
   </div>
 </div>
-<!-- Modal 7 -->
+<!-- Modal 6 -->
 <div class="modal fade"  id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -383,43 +352,9 @@
     </div>
   </div>
 </div>
-<!-- Modal 8 -->
-<div class="modal fade"  id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="container">
-          <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
-            
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
-          </div>
-          <div class="top-left1">
-            <p class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
-          </div>
-          <div class="top-left2">
-            <p class="pink" style="font-size: 5.5vw;">7 p.m onwards</p>
-          </div>
 
-          <div class="centered"><p class="purple" style="font-size: 7vw;">Venue</p></div>
-          <div class="centered1"><p class="pink" style="font-size: 5.5vw;">Babu ka bagh,Moe k ghar ke bagal m choti wali gali main ghuse jana.</p></div>
-         
-    
-                <div class="centered3">
-                  <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
-                    <img style="height:60px;width:70px;" src="background/pin.png" alt=""></a>
-                </div>
-          <div class="bottom-left"><p class="mb-0 purple" style="font-size: 6.5vw;">Contact</p></div>
-          <div  class="bottom-left1"><a class="mb-0" href="tel:9351758536"  style="font-size: 5vw;"><i style="font-size:3.5vw;" class="fas fa-phone-alt"></i> 9351758536</a></div>
-          
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
 <!-- Modal 0 -->
-<div class="modal fade" id="exampleModal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal10"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div   class="modal-dialog" role="document">
     <div  class="modal-content">
       <!-- Modal 0 -->
@@ -432,43 +367,30 @@
 </div>
 </div>
 <script>
-  
-  $(document).ready(function(){
-  $("#btn1").click(function(){
-    $("#exampleModal0").modal({backdrop: false});
-  });
-});
-  $(document).ready(function(){
-  $("#btn2").click(function(){
-    $("#exampleModal").modal();
-    $("#exampleModa1").modal();
-    $("#exampleModa3").modal();
-    $("#exampleModa4").modal();
-    $("#exampleModa5").modal();
-    $("#exampleModa6").modal();
-    $("#exampleModa7").modal();
-    $("#exampleModa8").modal();
-    
-  });
-});
+//   $(document).ready(function(){
+//   $("#download_card").click(function(){
+//     $("#exampleModal0").modal({backdrop: true});
+//   });
+// });
 
- window.onload = function () {
+    function call_modal(dataTarget){
+  $(document).ready(function(){
+    $(dataTarget).modal();
+   
+// });
+    // }
+
+
+
+//  window.onload = function () {  
+
     if (typeof history.pushState === "function") {
-        history.pushState("jibberish", null, null);
-      
+        history.pushState("jibberish", null, null);  
 
         window.onpopstate = function () {
             history.pushState('newjibberish', null, null);
            
-    $("#exampleModal").modal('hide');
-    $("#exampleModal0").modal('hide');
-    $("#exampleModal1").modal('hide');
-    $("#exampleModal2").modal('hide');
-    $("#exampleModal3").modal('hide');
-    $("#exampleModal4").modal('hide');
-    $("#exampleModal5").modal('hide');
-    $("#exampleModal6").modal('hide');
-    $("#exampleModal7").modal('hide');
+    $(dataTarget).modal('hide');  
         };
     }
     else {
@@ -483,12 +405,15 @@
             }
         };
     }
-}
+// }
+  });
 
-w3.slideshow(".slide_show", 3000);
+    }
+
+// w3.slideshow(".slide_show", 3000);
 
   </script>
-    <!-- w3schools  -->
+    <!-- W3schools  -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <!-- Bootstrap,jquery-3,popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
