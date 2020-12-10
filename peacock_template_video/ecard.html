@@ -19,7 +19,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
     
-    <script src="js/script.js"></script>
+    <script src="js/event_slider.js"></script>
     
     <title>Wedding WebApp</title>
 
@@ -95,22 +95,22 @@
           
           
           <div>
-                <img id="chaak" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal1" data-u="image" src="image_logo/chaak.png" />
+                <img id="chaak_image" onclick="call_modal(getAttribute('data-target'))" data-target="#chaak" data-u="image" src="image_logo/chaak.png" />
             </div>
           <div>
-                <img id="mehendi" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal2" data-u="image" src="image_logo/mehendi.png" />
+                <img id="mehendi_image" onclick="call_modal(getAttribute('data-target'))" data-target="#mehendi" data-u="image" src="image_logo/mehendi.png" />
             </div>
           <div>
-                <img id="pravesh" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal3" data-u="image" src="image_logo/pravesh.png" />
+                <img id="pravesh_image" onclick="call_modal(getAttribute('data-target'))" data-target="#pravesh" data-u="image" src="image_logo/pravesh.png" />
             </div>
           <div>
-                <img id="tilak" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal4" data-u="image" src="image_logo/tilak.png" />
+                <img id="tilak_image" onclick="call_modal(getAttribute('data-target'))" data-target="#tilak" data-u="image" src="image_logo/tilak.png" />
             </div>
           <div>
-                <img id="fere" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal5" data-u="image" src="image_logo/fere.png" />
+                <img id="fere_image" onclick="call_modal(getAttribute('data-target'))" data-target="#fere" data-u="image" src="image_logo/fere.png" />
             </div>
            <div>
-                <img id="haldi" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal6" data-u="image" src="image_logo/haldi.png" />
+                <img id="haldi_image" onclick="call_modal(getAttribute('data-target'))" data-target="#haldi" data-u="image" src="image_logo/haldi.png" />
             </div>                
         </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation composer</a>
         
@@ -120,7 +120,7 @@
 
     
     <!-- <button type="button"   class="mt-2  d-block btn" > -->
-      <div id="download_card" onclick="call_modal(getAttribute('data-target'))" data-target="#exampleModal10" class="container1">
+      <div id="download_card" onclick="call_modal(getAttribute('data-target'))" data-target="#real_card" class="container1">
         <img style="height: 90px;width:100%;" src="./image_logo/dc4.png">
         <div class="text">
 
@@ -143,15 +143,15 @@
 
 
 <!-- Modal 1 -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="chaak" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="container">
           <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
+          <div class="row">
             
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
+            <p class="purple col-12" style="position:absolute;top:18%;font-size: 7vw;">Chaak</p>
           </div>
           <div class="top-left1">
             <p class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
@@ -178,15 +178,15 @@
   </div>
 </div>
 <!-- Modal 2 -->
-<div class="modal fade"  id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade"  id="mehendi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="container">
           <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
+          <div class="row">
             
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
+            <p class="purple col-12" style="position:absolute;top:18%;font-size: 7vw;">Mehendi</p>
           </div>
           <div class="top-left1">
             <p class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
@@ -213,15 +213,15 @@
   </div>
 </div>
 <!-- Modal 3 -->
-<div class="modal fade"  id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade"  id="pravesh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="container">
           <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
+          <div class="row">
             
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
+            <p class="purple col-12" style="position:absolute;top:18%;font-size: 7vw;">Pravesh</p>
           </div>
           <div class="top-left1">
             <p class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
@@ -248,15 +248,15 @@
   </div>
 </div>
 <!-- Modal 4 -->
-<div class="modal fade"  id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade"  id="tilak" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="container">
           <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
+          <div class="row">
             
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
+            <p class="purple col-12" style="position:absolute;top:18%;font-size: 7vw;">Tilak</p>
           </div>
           <div class="top-left1">
             <p  class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
@@ -283,15 +283,15 @@
   </div>
 </div>
 <!-- Modal 5 -->
-<div class="modal fade"  id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade"  id="fere" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="container">
           <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
+          <div class="row">
             
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
+            <p class="purple col-12" style="position:absolute;top:18%;font-size: 7vw;">Fere</p>
           </div>
           <div class="top-left1">
             <p class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
@@ -318,15 +318,15 @@
   </div>
 </div>
 <!-- Modal 6 -->
-<div class="modal fade"  id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade"  id="haldi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="container">
           <img id="mainevent" data-dismiss="modal" style="width: 100%;height: 50%;" src="./background/card.jpg" alt="">
-          <div class="top-left">
+          <div class="row">
             
-            <p class="purple" style="font-size: 7vw;">Subh Vivah</p>
+            <p class="purple col-12" style="position:absolute;top:18%;font-size: 7vw;">Haldi</p>
           </div>
           <div class="top-left1">
             <p class="pink" style="font-size: 5.5vw;">30 Jan, 2020</p>
@@ -354,13 +354,13 @@
 </div>
 
 <!-- Modal 0 -->
-<div class="modal fade" id="exampleModal10"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="real_card"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div   class="modal-dialog" role="document">
     <div  class="modal-content">
       <!-- Modal 0 -->
       <div class="modal-body">
         <div class="container" >
-          <iframe src="standard1.html" style="width:100%;height: 430px;"></iframe>
+          <iframe src="physical_card.html" style="width:100%;height: 430px;"></iframe>
             </div>
       </div>
   </div>
