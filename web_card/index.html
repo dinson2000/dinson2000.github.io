@@ -24,7 +24,7 @@
         z-index: 100;
         bottom: 0;
         left: 0;
-        height: 50vh;
+        /* height: ; */
         display: block;
         transition: all 1s linear;
         
@@ -115,20 +115,69 @@
 }
       .image_size{
         height:200px;
-        width: 200px;
+        max-width: 200px;
+        width: 100%;
+      }
+     
+      .border_div{
+        border: 2px solid #d1ac06;
+        max-width: 100px;
+        width: 75vw;
+        /* position: relative;
+        top: 30px;        
+        height: 70px; */
+        border-radius:0px 0px 30px 30px;
+        /* background-color: pink; */
+      }
+      .border_div1{
+        
+        /* width: 450px; */
+        width: 75vw;
+        /* height: 780px; */
+        position: relative;
+        top: 50px;        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* box-sizing: border-box; */
+        height: 100px;
+        border-radius:0px 0px 30px 30px;
+        margin: auto;
+        /* background-color: pink; */
+        /* display: flex; */
+        background-color:#F7AEC9;
+        /* justify-content: center; */
+      }
+      .border_div2{
+        display: flex;
+        justify-content: center;
+      }
+      .size{
+        font-size: 35px;
+        color:#d1ac06;
+      }
+      .size1{
+        font-size: 12px;
+        color:#d1ac06;
+        font-weight: bold;
+
       }
       
+     @media screen and (max-width:768px){
+       .mobile_view{
+         display:none;
+       }
+     }
     </style>
   </head>
   <body>
     
     <img src="images/main.jpg" style="height: 70vh;width: 100%;" alt="">
     <div id="main_div" class="container-fluid text-center main_div">
-      <p style="font-size:17px;" class="mt-2 font-weight-bold">Wedding Invitation</p>
-      <p style="font-size:30px;color: #FDADC8;font-family: myFont;" class="m-0 p-2 font-weight-bold">Son & Princess</p>
-      <p style="font-size:17px;" class="font-weight-bold m-0">To Dear,</p>
-      <p style="font-size:17px;" class="font-weight-bold m-3">Father/Mother/Sibling</p>
-      <input class="main_btn btn font-weight-bold" id="btn" type="button" value="Open Invitation" onclick="play()">
+      <p  class="mt-2 font-weight-bold">Wedding Invitation</p>
+      <p style="color: #FDADC8;font-family: myFont;" class="font-weight-bold">Son & Princess</p>
+      <p  class="font-weight-bold ">To Dear,</p>
+      <p class="font-weight-bold">Father/Mother/Sibling</p>
+      <input class="main_btn btn font-weight-bold mb-2" id="btn" type="button" value="Open Invitation" onclick="play()">
       <audio id="audio" src="song/song.mp3"></audio>
     </div>
     
@@ -154,19 +203,19 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col-5 text-center">
+        <div class="col-sm-5 text-center">
             <img src="images/groom.png" class="animated zoomIn image_size rounded-circle">
-            <p class="mt-2 style_color1" style="">Prince</p>
-            <p class="mt-2 style_color1" style="font-size:35px;">MSMJ</p>
+            <p class="style_color1" style="">Prince</p>
+            <p class="style_color1" style="">MSMJ</p>
             <p class="font-weight-bold animated zoomIn" style="font-size:17px;color: black;">The fact that I am marrying the women of my dreams is all that matters.</p>
         </div>
-        <div style="display: flex;align-items: center;justify-content: center;" class="col-2 text-center">
+        <div style="display: flex;align-items: center;justify-content: center;" class="col-sm-2 text-center">
           <p style="font-size:25px;color: rgba(165, 4, 120, 0.768);border-top:2px solid  rgba(165, 4, 120, 0.768);border-bottom:2px solid  rgba(165, 4, 120, 0.768);" class="">&</p>
         </div>
-        <div class="col-5 text-center">
+        <div class="col-sm-5 text-center">
           <img  src="images/bride.jpg" class="animated zoomIn image_size rounded-circle">
-          <p class="mt-2 style_color1" style="">Princess</p>
-          <p class="mt-2 style_color1" style="font-size:35px;">MSMJ</p>
+          <p class="style_color1" style="">Princess</p>
+          <p class="style_color1" style="">MSMJ</p>
           <p class="font-weight-bold animated zoomIn" style="font-size:17px;color: black;">The fact that I am marrying the man of my dreams is all that matters</p>
 
 
@@ -176,7 +225,7 @@
     </div>
     <div class="container-fluid last_div">
       <div class="row">
-        <div style="font-size: 30px;" class="col-12 text-center">
+        <div style="" class="col-12 text-center">
           <i style="color: rgb(255, 214, 29);" class="fas fa-stopwatch"></i>
         </div>
       </div>
@@ -190,12 +239,12 @@
         </div>
       </div>
       <div class="row">
-        <div style="font-size: 30px;color: rgb(255, 214, 29);" class="col-6 text-center">
+        <div style="color: rgb(255, 214, 29);" class="col-6 text-center">
           <p class="m-0">Some</p>
           <p class="m-0">02.January.2021</p>
           <p class="m-0">08:00</p>
         </div>
-        <div style="font-size: 30px;color: rgb(255, 214, 29);" class="col-6 text-center">
+        <div style="color: rgb(255, 214, 29);" class="col-6 text-center">
           <p class="m-0">Some</p>
           <p class="m-0">02.January.2021</p>
           <p class="m-0">08:00</p>
@@ -211,6 +260,42 @@
           
         </div>
       </div>
+    </div>
+    <div class="container-fluid ">
+       
+      <div class="text-center border_div1 row" style=""> 
+        <div class="col-3">
+
+          <div class="mobile_view ">
+            <p class="m-0" style="font-size:20px;color:#d1ac06;">
+              Wedding-Time
+            </p>
+            <p class="m-0" style="font-size:20px;color:#d1ac06;">
+              Remaining
+            </p>
+          </div>
+        </div>
+        <div class="col-9 border_div2">
+
+          <div class="border_div">
+            <p class="m-0 size">00</p>
+            <p class="m-0 size1">Day</p>
+          </div>
+          <div class="border_div">
+            <p class="m-0 size">00</p>
+            <p class="m-0 size1">Hours</p>
+          </div>
+          <div class="border_div">
+            <p class="m-0 size">00</p>
+            <p class="m-0 size1">Minutes</p>
+          </div>
+          <div class="border_div">
+            <p class="m-0 size">00</p>
+            <p class="m-0 size1">Seconds</p>
+          </div>
+        </div>
+      </div>
+        <img src="images/ring_background.jpg" class="responsive" style="width: 100%;height:70vw;max-height:400px;" alt="">
     </div>
     <!-- <img src="images/main.jpg" style="height: 100vh;width: 100%;" alt="">
     <img src="images/main.jpg" style="height: 100vh;width: 100%;" alt=""> -->
