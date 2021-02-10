@@ -1,5 +1,5 @@
 function play() {
-    let audio = document.getElementById("audio");
+    var audio = document.getElementById("audio");
     var visible = document.getElementById("sound_icon");
     visible.classList.remove("sound_button_none");
     visible.classList.add("sound_button_visible");
@@ -8,15 +8,25 @@ function play() {
     scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft; 
     window.scrollTo(scrollLeft, scrollTop); 
-    
-    
   }
+  let audio1 = document.getElementById("audio");
+  
   var variable=document.getElementById("sound_icon");
+  let a=1;
   variable.addEventListener('click',function(){
-   
-    audio.pause();
-    variable.classList.remove("fa-volume-up");
-    variable.classList.add("fa-volume-mute");
+    if(a==1){
+      audio1.pause();
+      a=0;
+      variable.classList.remove("fa-volume-up");
+      variable.classList.add("fa-volume-mute");
+    }
+    else{
+      audio1.play();
+      a=1;
+      variable.classList.remove("fa-volume-mute");
+      variable.classList.add("fa-volume-up");
+    }
+    
   })  
 
   scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
