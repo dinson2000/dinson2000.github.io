@@ -84,7 +84,9 @@
         font-family: myFont;
       }
       .new_div{
-        background-image: url("images/background.jpg");
+        background-image: url("images/main_background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
       } 
       .last_div{
         background-image: url("images/background.jpg");
@@ -164,7 +166,38 @@
         font-weight: bold;
 
       }
-      
+      .location{
+        font-size:27px;
+      }
+      .fa-volume-up{
+        font-size: 25px;
+        cursor: pointer;
+        position:fixed;
+        bottom: 15%;
+        left:10%;
+        z-index: 999;
+
+      }
+      .fa-volume-mute{
+        font-size: 25px;
+        cursor: pointer;
+        position:fixed;
+        bottom: 15%;
+        left:10%;
+        z-index: 999;
+
+      }
+      #sound_icon.sound_button_none{
+        display: none;
+      }
+      #sound_icon.sound_button_visible{
+        display: inline-block;
+      }
+      .events{
+        background-image: url('images/main_background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
      @media screen and (max-width:768px){
        .mobile_view{
          display:none;
@@ -173,8 +206,11 @@
     </style>
   </head>
   <body>
-    
-    <img src="images/main.jpg" style="height: 70vh;width: 100%;" alt="">
+    <div class="container">
+      <i id="sound_icon" class="sound_button_none fas fa-volume-up"></i>
+      <!-- <i class="fas fa-volume-up"></i> -->
+    </div>
+    <img src="images/main1.jpg" style="height: 70vh;width: 100%;" alt="">
     <div id="main_div" class="container-fluid text-center main_div">
       <p  class="mt-2 font-weight-bold">Wedding Invitation</p>
       <p style="color: #FDADC8;font-family: myFont;" class="font-weight-bold">Son & Princess</p>
@@ -207,9 +243,9 @@
       </div>
       <div class="row mt-4">
         <div class="col-sm-5 text-center">
-            <img src="images/groom.png" class="animated zoomIn image_size rounded-circle">
+            <img src="images/groom.png" class="animated zoomIn image_size rounded-circle">`
             <p class="style_color1" style="">Prince</p>
-            <p class="style_color1" style="">MSMJ</p>
+            <p class="style_color1" style="">Father's Name</p>
             <p class="font-weight-bold animated zoomIn" style="font-size:17px;color: black;">The fact that I am marrying the women of my dreams is all that matters.</p>
         </div>
         <div style="display: flex;align-items: center;justify-content: center;" class="col-sm-2 text-center">
@@ -218,7 +254,7 @@
         <div class="col-sm-5 text-center">
           <img  src="images/bride.jpg" class="animated zoomIn image_size rounded-circle">
           <p class="style_color1" style="">Princess</p>
-          <p class="style_color1" style="">MSMJ</p>
+          <p class="style_color1" style="">Father's name</p>
           <p class="font-weight-bold animated zoomIn" style="font-size:17px;color: black;">The fact that I am marrying the man of my dreams is all that matters</p>
 
 
@@ -226,7 +262,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid last_div">
+    <!-- <div class="container-fluid last_div">
       <div class="row">
         <div style="font-size:40px;" class="col-12 text-center">
           <i style="color: #d1ac06;" class="fas fa-stopwatch"></i>
@@ -264,7 +300,9 @@
           
         </div>
       </div>
-    </div>
+    </div> -->
+    <div class="container-fluid events">
+
     <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
 
    
@@ -289,10 +327,10 @@
                   <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM ONWARDS</p>
                   <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
                   <div class="row" style="border-bottom:2px solid #FDADC8;">
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                       <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div>
-                  <div class="col-9 text-left">
+                  </div> -->
+                  <div class="col-12 location text-center">
                     <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
                   </div>
                   </div>
@@ -315,10 +353,10 @@
                   <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM ONWARDS</p>
                   <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
                   <div class="row" style="border-bottom:2px solid #FDADC8;">
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                       <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div>
-                  <div class="col-9 text-left">
+                  </div> -->
+                  <div class="col-12 location text-center">
                     <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
                   </div>
                   </div>
@@ -341,10 +379,10 @@
                   <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM ONWARDS</p>
                   <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
                   <div class="row" style="border-bottom:2px solid #FDADC8;">
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                       <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div>
-                  <div class="col-9 text-left">
+                  </div> -->
+                  <div class="col-12 location text-center">
                     <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
                   </div>
                   </div>
@@ -367,10 +405,10 @@
                   <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM ONWARDS</p>
                   <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
                   <div class="row" style="border-bottom:2px solid #FDADC8;">
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                       <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div>
-                  <div class="col-9 text-left">
+                  </div> -->
+                  <div class="col-12 location text-center">
                     <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
                   </div>
                   </div>
@@ -393,10 +431,10 @@
                   <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM ONWARDS</p>
                   <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
                   <div class="row" style="border-bottom:2px solid #FDADC8;">
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                         <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                    </div>
-                    <div class="col-9 text-left">
+                    </div> -->
+                    <div class="col-12 location text-center">
                       <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
                     </div>
                   </div>
@@ -413,6 +451,7 @@
   </div>
   <script type="text/javascript">jssor_1_slider_init();
   </script>
+  </div>
     <div class="container-fluid ">
        
       <div class=" border_div1 row" style=""> 
@@ -427,22 +466,43 @@
             </p>
           </div>
         </div>
+        <script>
+          
+function startTime() {
+  var today = new Date();
+  var d = today.getDate();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('day').innerHTML=d; 
+  document.getElementById('hours').innerHTML=h; 
+  document.getElementById('minutes').innerHTML=m; 
+  document.getElementById('seconds').innerHTML= s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+        </script>
         <div class="col-md-8 text-center border_div2">
 
           <div class="border_div">
-            <p class="m-0 size">00</p>
+            <p id="day" class="m-0 size"><script>startTime()</script></p>
             <p class="m-0 size1">Day</p>
           </div>
           <div class="border_div">
-            <p class="m-0 size">00</p>
+            <p id="hours" class="m-0 size"><script>startTime()</script></p>
             <p class="m-0 size1">Hours</p>
           </div>
           <div class="border_div">
-            <p class="m-0 size">00</p>
+            <p id="minutes" class="m-0 size"><script>startTime()</script></p>
             <p class="m-0 size1">Minutes</p>
           </div>
           <div class="border_div">
-            <p class="m-0 size">00</p>
+            <p id="seconds" class="m-0 size"><script>startTime()</script></p>
             <p class="m-0 size1">Seconds</p>
           </div>
         </div>

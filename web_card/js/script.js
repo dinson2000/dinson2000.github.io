@@ -1,13 +1,24 @@
 function play() {
-    var audio = document.getElementById("audio");
+    let audio = document.getElementById("audio");
+    var visible = document.getElementById("sound_icon");
+    visible.classList.remove("sound_button_none");
+    visible.classList.add("sound_button_visible");
     audio.play();
     window.onscroll = function() {}; 
     scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft; 
     window.scrollTo(scrollLeft, scrollTop); 
-
-
+    
+    
   }
+  var variable=document.getElementById("sound_icon");
+  variable.addEventListener('click',function(){
+   
+    audio.pause();
+    variable.classList.remove("fa-volume-up");
+    variable.classList.add("fa-volume-mute");
+  })  
+
   scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
   scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
 
