@@ -35,13 +35,17 @@
         border-bottom: 8px solid #FDADC8;
         position: fixed;
         z-index: 100;
-        bottom: 0;
+        bottom: 0px;
         left: 0;
         /* height: ; */
         display: block;
         transition: all 1s linear;
         
         
+      }
+     
+      .main_div p{
+        font-size:20px;
       }
       @keyframes animation {
         0%{
@@ -258,6 +262,9 @@
        .mobile_view{
          display:none;
        }
+       .main_div{
+         bottom:20px;
+       }
      }
     </style>
   </head>
@@ -269,7 +276,7 @@
     <img src="images/main1.jpg" style="height: 70vh;width: 100%;" alt="">
     <div id="main_div" class="container-fluid text-center main_div">
       <p  class="mt-2 font-weight-bold">Wedding Invitation</p>
-      <p style="color: #FDADC8;font-family: myFont;" class="font-weight-bold">Son & Princess</p>
+      <p style="color: #FDADC8;font-family: myFont;font-size: 40px;" class="font-weight-bold">Son & Princess</p>
       <p  class="font-weight-bold ">To Dear,</p>
       <p class="font-weight-bold">Father/Mother/Sibling</p>
       <input class="main_btn btn font-weight-bold mb-2" id="btn" type="button" value="Open Invitation" onclick="play()">
@@ -579,7 +586,7 @@
 <div class="row  new_div  mt-2">
   <div class="style_color1 col-12 text-center">
     <p class="p-0">Gallery</p>
-    <p class="m-0" style="font-size:25px;color: black;">"There’s no good story without Photos"</p>
+    <p class="m-0" style="font-size:46px;color: black;">"There’s no good story without Photos"</p>
 
   </div>
 </div>

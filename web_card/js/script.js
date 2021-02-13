@@ -1,12 +1,12 @@
-function disableScroll() {
-  document.body.style.overflow = 'hidden';
-  document.querySelector('html').scrollTop = window.scrollY;
-  }
-  disableScroll();
-  function enableScroll() {
-  document.body.style.overflow = null;
-  }
-  disableScroll();  
+// function disableScroll() {
+//   document.body.style.overflow = 'hidden';
+//   document.querySelector('html').scrollTop = window.scrollY;
+//   }
+//   disableScroll();
+//   function enableScroll() {
+//   document.body.style.overflow = null;
+//   }
+  
 
 function play() {
     var audio = document.getElementById("audio");
@@ -16,9 +16,14 @@ function play() {
     audio.play();
     var scroll=document.getElementById("body");
     scroll.classList.remove("touch")
-    
-    document.body.style.overflow = null;
+    window.onscroll = function() {}; 
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft; 
+    window.scrollTo(scrollLeft, scrollTop); 
+    // document.body.style.overflow = null;
   }
+  
+  
   var scroll=document.getElementById("body");
   scroll.classList.add("touch")
   let audio1 = document.getElementById("audio");
@@ -42,6 +47,13 @@ function play() {
   })  
 
 
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
+
+ 
+      window.onscroll = function() { 
+          window.scrollTo(0, 0); 
+      }; 
 
   let box = document.getElementById('box');
 
