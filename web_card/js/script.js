@@ -1,14 +1,26 @@
+function disableScroll() {
+  document.body.style.overflow = 'hidden';
+  document.querySelector('html').scrollTop = window.scrollY;
+  }
+  disableScroll();
+  function enableScroll() {
+  document.body.style.overflow = null;
+  }
+  disableScroll();  
+
 function play() {
     var audio = document.getElementById("audio");
     var visible = document.getElementById("sound_icon");
     visible.classList.remove("sound_button_none");
     visible.classList.add("sound_button_visible");
     audio.play();
-    window.onscroll = function() {}; 
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft; 
-    window.scrollTo(scrollLeft, scrollTop); 
+    var scroll=document.getElementById("body");
+    scroll.classList.remove("touch")
+    
+    document.body.style.overflow = null;
   }
+  var scroll=document.getElementById("body");
+  scroll.classList.add("touch")
   let audio1 = document.getElementById("audio");
   
   var variable=document.getElementById("sound_icon");
@@ -29,13 +41,6 @@ function play() {
     
   })  
 
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
-  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
-
- 
-      window.onscroll = function() { 
-          window.scrollTo(0, 0); 
-      }; 
 
 
   let box = document.getElementById('box');
