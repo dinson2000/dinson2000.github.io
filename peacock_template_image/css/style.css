@@ -1,3 +1,12 @@
+.body2{
+  display: none;
+}
+.body1{
+  display: block;
+}
+body{
+  background-color: white;
+}
 .container {
   position: relative;
   text-align: center;
@@ -86,4 +95,19 @@
 @font-face {
   font-family: myFirstFont;
   src: url("GreatVibes-Regular.otf");
+}
+@media screen and (max-width:425px){
+
+  body{
+    background-image: url('../background/background.png');
+    font-family:myFirstFont;
+    background-position: center;
+     background-size:100vw 100%;
+  }
+.body2{
+  display: block;
+}
+.body1{
+  display: none;
+}
 }

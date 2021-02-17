@@ -207,10 +207,10 @@
     }
 
     .size1 {
-      font-size: 12px;
+      font-size: 22px;
       color: #915200;
       font-weight: bold;
-
+      font-family:myFont;
     }
 
     .location {
@@ -276,7 +276,8 @@
     }
 
     .responsive {
-      height: 80vw;
+      /* height: 80vw; */
+      height: 250px;
       max-height: 500px;
       max-width: 90vw;
       width: 100%;
@@ -425,169 +426,145 @@
       <p style="font-family: myFont;font-size: 45px;">Events</p>
     </div>
     <div id="jssor_1"
-      style="position:relative;margin:0 auto;top:0px;left:0px;width:880px;height:320px;overflow:hidden;visibility:hidden;">
+      style="position:relative;margin:0 auto;top:0px;left:0px;width:880px;height:720px;overflow:hidden;visibility:hidden;">
       <!-- Loading Screen -->
       <div data-u="loading" class="jssorl-009-spin"
         style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
         <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
       </div>
       <div data-u="slides"
-        style="cursor:default;position:relative;top:0px;left:0px;width:880px;height:320px;overflow:hidden;">
-        <div class="px-4">
-          <div class="row ">
-            <div class="col-12 text-center">
-              <p class="m-0 font-weight-bold" style="font-size: 50px;font-family: myFont;">Mayara</p>
-              <p class="m-0" style="color: #FDADC8;">“Maternal Uncle’s Ceremony.”</p>
-              <p class="m-0" style="font-size: 20px;border-top:2px solid #FDADC8;">12/2021</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;font-size: 20px;">NOVEMBER</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM
-                ONWARDS</p>
-              <a
-                href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
-                <div class="row" style="border-bottom:2px solid #FDADC8;">
-                  <!-- <div class="col-3">
-                      <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div> -->
-                  <div class="col-12 location text-center">
-                    <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
-                  </div>
+        style="cursor:default;position:relative;top:0px;left:0px;width:880px;height:720px;overflow:hidden;">
+
+
+        <!-- <div class="px-4">
+          <div style="background-image: url('images/mayra.jpg');border-radius:10px;background-size:100% 100%;background-repeat: no-repeat;" class="row">
+            <div style="padding:50px;" class="col-12 text-center">
+               <div style="border:2px solid #FDADC8;backdrop-filter:blur(25px);width: 300px;" class="mx-auto row text-center">
+                <div class="col-12 text-center">
+                  <p class="m-0 font-weight-bold" style="font-size: 50px;font-family: myFont;">Mayara </p>
+                  <p class="m-0" style="color: white;">“Maternal Uncle’s Ceremony.”</p>
+                  <p class="m-0" style="font-size: 20px;border-top:2px solid #FDADC8;">Saturady,02 March,2021</p>
+                  <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;font-size: 25px;">8PM
+                    ONWARDS</p>
+                 
                 </div>
-              </a>
-              <div class="row">
                 <div class="col-12">
                   <a href="tel:7597241244">
-                    <p style="border-bottom:2px solid #FDADC8;color: black;font-size: 25px;"><span
+                    <p style="border-bottom:2px solid #FDADC8;color: white;font-size: 25px;"><span
                         class="fas fa-phone-alt"></span>&nbsp;759241244 </p>
                   </a>
                 </div>
+                <div class="col-12 location text-center">
+                  <a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09"><p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p></a>
+                </div>
               </div>
+              <div class="row">
+               
+              </div>
+            </div>
+            
+          </div>
+        </div> -->
+        <style>
+          .flex-container {
+            display: flex;
+            flex-direction: column;
+            height: 720px;
+          }
+          
+          .flex-container>div {
+            border: 4px solid #C64591;
+            height: 50%;
+            width: 100%;
+          }
+          .flex-container > div >p{
+            margin: 0px;
+          }
+        </style>
+        <div class="px-4">
+          <div class="flex-container">
+            <div>
+              <img style="height: 100%;width: 100%;" src="images/mehendi.jpg" alt="">
+            </div>
+            <div style="font-family:myFont;font-size:30px;background-color: white;" class="mt-1 text-center">
+              <p style="font-size: 50px;" class="mb-3">Mehendi</p>
+              <p>July 19,2021</p>
+              <p>7 PM - 11 PM</p>
+              <p>Taj Mahal Palace Hotel,</p>
+              <p>Mumbai</p>
+              <p>Dress Code: Bollywood-inspired</p>
+              <a href="tel:7597241244"><p style="color: black;">7597241244</p></a>
+            </div>
+          </div>
+        </div>
+       <div class="px-4">
+          <div class="flex-container">
+            
+            <div style="font-family:myFont;font-size:30px;background-color: white;" class="mt-1 text-center">
+              <p style="font-size: 50px;" class="mb-3">Sangeet</p>
+              <p>July 19,2021</p>
+              <p>7 PM - 11 PM</p>
+              <p>Taj Mahal Palace Hotel,</p>
+              <p>Mumbai</p>
+              <p>Dress Code: Bollywood-inspired</p>
+              <a href="tel:7597241244"><p style="color: black;">7597241244</p></a>
+            </div>
+            <div>
+              <img style="height: 100%;width: 100%;" src="images/sangeet.jpg" alt="">
+            </div>
+          </div>
+        </div>
+       <div class="px-4">
+          <div class="flex-container">
+            <div>
+              <img style="height: 100%;width: 100%;" src="images/mayra.jpg" alt="">
+            </div>
+            <div style="font-family:myFont;font-size:30px;background-color: white;" class="mt-1 text-center">
+              <p style="font-size: 50px;" class="mb-3">Mayara</p>
+              <p>July 19,2021</p>
+              <p>7 PM - 11 PM</p>
+              <p>Taj Mahal Palace Hotel,</p>
+              <p>Mumbai</p>
+              <p>Dress Code: Bollywood-inspired</p>
+              <a href="tel:7597241244"><p style="color: black;">7597241244</p></a>
+            </div>
+          </div>
+        </div>
+       <div class="px-4">
+          <div class="flex-container">
+            
+            <div style="font-family:myFont;font-size:30px;background-color: white;" class="mt-1 text-center">
+              <p style="font-size: 50px;" class="mb-3">Haldi</p>
+              <p>July 19,2021</p>
+              <p>7 PM - 11 PM</p>
+              <p>Taj Mahal Palace Hotel,</p>
+              <p>Mumbai</p>
+              <p>Dress Code: Bollywood-inspired</p>
+              <a href="tel:7597241244"><p style="color: black;">7597241244</p></a>
+            </div>
+            <div>
+              <img style="height: 100%;width: 100%;" src="images/haldi.jpg" alt="">
             </div>
           </div>
         </div>
         <div class="px-4">
-          <div style="background-image: url('images/haldi.jpg');border-radius: 100px;" class="row">
-            <div style="backdrop-filter:blur(5px);" class="col-12 text-center">
-              <p class="m-0 font-weight-bold" style="font-size: 50px;font-family: myFont;">Haldi </p>
-              <p class="m-0" style="color: #FDADC8;">“The yellow colour is auspicious.”</p>
-              <p class="m-0" style="font-size: 20px;border-top:2px solid #FDADC8;">12/2021</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;font-size: 20px;">NOVEMBER</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM
-                ONWARDS</p>
-              <a
-                href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
-                <div class="row" style="border-bottom:2px solid #FDADC8;">
-                  <!-- <div class="col-3">
-                      <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div> -->
-                  <div class="col-12 location text-center">
-                    <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
-                  </div>
-                </div>
-              </a>
-              <div class="row">
-                <div class="col-12">
-                  <a href="tel:7597241244">
-                    <p style="border-bottom:2px solid #FDADC8;color: black;font-size: 25px;"><span
-                        class="fas fa-phone-alt"></span>&nbsp;759241244 </p>
-                  </a>
-                </div>
-              </div>
+          <div class="flex-container">
+            <div>
+              <img style="height: 100%;width: 100%;" src="images/tilak.jpg" alt="">
+            </div>
+            <div style="font-family:myFont;font-size:30px;background-color: white;" class="mt-1 text-center">
+              <p style="font-size: 50px;" class="mb-3">Tilak</p>
+              <p>July 19,2021</p>
+              <p>7 PM - 11 PM</p>
+              <p>Taj Mahal Palace Hotel,</p>
+              <p>Mumbai</p>
+              <p>Dress Code: Bollywood-inspired</p>
+              <a href="tel:7597241244"><p style="color: black;">7597241244</p></a>
             </div>
           </div>
         </div>
-        <div class="px-4">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p class="m-0 font-weight-bold" style="font-size: 50px;font-family: myFont;">Mehendi </p>
-              <p class="m-0" style="color: #FDADC8;">“The joyfulness of mehendi.”</p>
-              <p class="m-0" style="font-size: 20px;border-top:2px solid #FDADC8;">12/2021</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;font-size: 20px;">NOVEMBER</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM
-                ONWARDS</p>
-              <a
-                href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
-                <div class="row" style="border-bottom:2px solid #FDADC8;">
-                  <!-- <div class="col-3">
-                      <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div> -->
-                  <div class="col-12 location text-center">
-                    <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
-                  </div>
-                </div>
-              </a>
-              <div class="row">
-                <div class="col-12">
-                  <a href="tel:7597241244">
-                    <p style="border-bottom:2px solid #FDADC8;color: black;font-size: 25px;"><span
-                        class="fas fa-phone-alt"></span>&nbsp;759241244 </p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="px-4">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p class="m-0 font-weight-bold" style="font-size: 50px;font-family: myFont;">Tilak </p>
-              <p class="m-0" style="color: #FDADC8;">“Vermilion on his forehead”</p>
-              <p class="m-0" style="font-size: 20px;border-top:2px solid #FDADC8;">12/2021</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;font-size: 20px;">NOVEMBER</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM
-                ONWARDS</p>
-              <a
-                href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
-                <div class="row" style="border-bottom:2px solid #FDADC8;">
-                  <!-- <div class="col-3">
-                      <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                  </div> -->
-                  <div class="col-12 location text-center">
-                    <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
-                  </div>
-                </div>
-              </a>
-              <div class="row">
-                <div class="col-12">
-                  <a href="tel:7597241244">
-                    <p style="border-bottom:2px solid #FDADC8;color: black;font-size: 25px;"><span
-                        class="fas fa-phone-alt"></span>&nbsp;759241244 </p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="px-4">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p class="m-0 font-weight-bold" style="font-size: 50px;font-family: myFont;">Sangeet </p>
-              <p class="m-0" style="color: #FDADC8;">“Women centric event”</p>
-              <p class="m-0" style="font-size: 20px;border-top:2px solid #FDADC8;">12/2021</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;font-size: 20px;">NOVEMBER</p>
-              <p class="m-0 font-weight-bold" style="border-bottom:2px solid #FDADC8;color:#F7AEC9;font-size: 25px;">8PM
-                ONWARDS</p>
-              <a
-                href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852107,75.7905578,11z/data=!4m2!3m1!1s0x396c4adf4c57e281:0xce1c63a0cf22e09">
-                <div class="row" style="border-bottom:2px solid #FDADC8;">
-                  <!-- <div class="col-3">
-                        <img style="height:70px;width:100%;" src="images/pin.png" alt=""> 
-                    </div> -->
-                  <div class="col-12 location text-center">
-                    <p class="m-0 font-weight-bold" style="color:black;">Sawai Bagh,Vaishali Nagar</p>
-                  </div>
-                </div>
-              </a>
-              <div class="row">
-                <div class="col-12">
-                  <a href="tel:7597241244">
-                    <p style="border-bottom:2px solid #FDADC8;color: black;font-size: 25px;"><span
-                        class="fas fa-phone-alt"></span>&nbsp;759241244 </p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+
       </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web animation</a>
     </div>
     <script type="text/javascript">jssor_1_slider_init();
@@ -610,8 +587,8 @@
 
 
       document.getElementById('day').innerHTML = d;
-      document.getElementById('hours').innerHTML = h+" :";
-      document.getElementById('minutes').innerHTML = m+" :";
+      document.getElementById('hours').innerHTML = h + " :";
+      document.getElementById('minutes').innerHTML = m + " :";
       document.getElementById('seconds').innerHTML = s;
 
       if (distance < 0) {
@@ -623,109 +600,42 @@
       }
     }, 100);
   </script>
-  <div class="container-fluid">
+  <div class="container-fluid mt-4">
     <div class="text-center">
       <p
         style="font-family:myFont;font-size:40px;display:inline-block;color:red;border-image:radial-gradient(red, #FEE1EB) 1;border-top:2px solid red;border-bottom:2px solid red;">
         Wedding Countdown Timer</p>
     </div>
-<div class="timer text-center mb-4">
-<div  class="d-inline-block mr-3">
-  <p id="day" class="m-0 size"></p>
-  <p class="m-0 size1">Day</p>
-</div>
-<div class=" d-inline-block">
-  <p id="hours" class="m-0 size"></p>
-  <p class="m-0 size1">Hours&nbsp;&nbsp;&nbsp;</p>
-</div>
-<div class=" d-inline-block">
-  <p id="minutes" class="m-0 size"></p>
-  <p class="m-0 size1">Minutes&nbsp;&nbsp;&nbsp;&nbsp;</p>
-</div>
-<div class="d-inline-block">
-  <p id="seconds" class="m-0 size"></p>
-  <p class="m-0 size1">Seconds&nbsp;</p>
-</div>
-
-</div>
-    
-  </div>
-  <!-- <div class="container-fluid ">
-       
-      <div class=" border_div1 row" style=""> 
-        <div class="col-4 ">
-
-          <div class="mobile_view ml-2">
-            <p class="m-0" style="font-size:1.9vw;color:#d1ac06;">
-              Wedding-Time
-            </p>
-            <p class="m-0" style="font-size:1.9vw;color:#d1ac06;">
-              Remaining
-            </p>
-          </div>
-        </div>
-
-        <script>
-          var countDownDate = new Date("Mar 1, 2021 15:37:25").getTime();
-          
-          var x = setInterval(function() {
-          
-            var now = new Date().getTime();
-              
-            var distance = countDownDate - now;
-            
-            var d = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var s = Math.floor((distance % (1000 * 60)) / 1000);
-              
-            
-            document.getElementById('day').innerHTML=d; 
-            document.getElementById('hours').innerHTML=h; 
-            document.getElementById('minutes').innerHTML=m; 
-            document.getElementById('seconds').innerHTML= s;
-           
-            if (distance < 0) {
-              clearInterval(x);
-              document.getElementById("day").innerHTML = "EXPIRED";
-              document.getElementById("hours").innerHTML = "EXPIRED";
-              document.getElementById("minutes").innerHTML = "EXPIRED";
-              document.getElementById("seconds").innerHTML = "EXPIRED";
-            }
-          }, 100);
-          </script>
-        <div class="col-md-8 text-center border_div2">
-
-          <div class="border_div">
-            <p id="day" class="m-0 size"></p>
-            <p class="m-0 size1">Day</p>
-          </div>
-          <div class="border_div">
-            <p id="hours" class="m-0 size"></p>
-            <p class="m-0 size1">Hours</p>
-          </div>
-          <div class="border_div">
-            <p id="minutes" class="m-0 size"></p>
-            <p class="m-0 size1">Minutes</p>
-          </div>
-          <div class="border_div">
-            <p id="seconds" class="m-0 size"></p>
-            <p class="m-0 size1">Seconds</p>
-          </div>
-        </div>
+    <div class="timer text-center mb-4">
+      <div class="d-inline-block mr-3">
+        <p id="day" class="m-0 size"></p>
+        <p class="m-0 size1">Days</p>
       </div>
-      <img src="images/ring_background.jpg" class="" style="width: 100%;height:70vw;max-height:400px;" alt="">
-    </div> -->
+      <div class=" d-inline-block">
+        <p id="hours" class="m-0 size"></p>
+        <p class="m-0 size1">Hours&nbsp;&nbsp;&nbsp;</p>
+      </div>
+      <div class=" d-inline-block">
+        <p id="minutes" class="m-0 size"></p>
+        <p class="m-0 size1">Minutes&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </div>
+      <div class="d-inline-block">
+        <p id="seconds" class="m-0 size"></p>
+        <p class="m-0 size1">Seconds&nbsp;</p>
+      </div>
 
+    </div>
 
-  <div class="row  new_div  mt-4">
-    <div class="style_color1 col-12 mt-4 text-center">
-      <p class="p-0">Gallery</p>
-      <p class="m-0" style="font-size:46px;color: black;">"There’s no good story without Photos"</p>
+  </div>
+
+  <div class="row mt-4">
+    <div class="style_color1 col-11 mt-4 text-center">
+      <p class="">Gallery</p>
+      <p class="" style="font-size:46px;color: black;">"There’s no good story without Photos"</p>
 
     </div>
   </div>
-  <div style="height: auto;" class="container-fluid text-center">
+  <div style="height: auto;margin-bottom: 30px;" class="container-fluid text-center">
     <img class="slide_show responsive mx-auto" src="images/gallery/3.jpg" alt="">
     <img class="slide_show responsive mx-auto" src="images/gallery/2.jpg" alt="">
     <img class="slide_show responsive mx-auto" src="images/gallery/4.jpg" alt="">
