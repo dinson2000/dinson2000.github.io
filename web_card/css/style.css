@@ -2,12 +2,16 @@
         font-family: "myFont";
         src: url("../font/GreatVibes-Regular.otf");
       }
-  
-      body {
+      .stop-scrolling { 
+        height: 100%; 
+        overflow: hidden; 
+    } 
+      #back_g {
         background-image: url("../images/main_background.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         /* touch-action: none; */
+        display: none;
   
       }
   
@@ -25,7 +29,7 @@
         z-index: 100;
         bottom: 0px;
         left: 0;
-        /* height: ; */
+        
         display: block;
         transition: all 1s linear;
   
@@ -108,7 +112,7 @@
         animation-duration: 2s;
         animation-fill-mode: both;
         animation-timing-function: linear;
-        animation-delay: 4s;
+        animation-delay: 1.5s;
       }
   
       @keyframes zoomIn {
@@ -268,7 +272,5 @@
           display: none;
         }
   
-        .main_div {
-          bottom: 20px;
-        }
+        
       }
