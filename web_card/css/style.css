@@ -1,3 +1,9 @@
+#body{
+  display: none;
+}
+.body1{
+  display: block;
+}
     @font-face {
         font-family: "myFont";
         src: url("../font/GreatVibes-Regular.otf");
@@ -257,24 +263,31 @@
       .flex-container > div >p{
         margin: 0px;
       }
+      @media screen and (max-width:425px){
+        #body{
+          display: block;
+        }
+        .body1{
+          display: none;
+        }
+      }
+          @media (max-width: 600px) {
+            .column {
+              flex: 25%;
+              max-width: 25%;
+            }
+          }
+      
+          @media screen and (max-width:768px) {
+            .mobile_view {
+              display: none;
+            }
+      
+            
+          }
       @media (max-width: 800px) {
         .column {
           flex: 50%;
           max-width: 50%;
         }
-      }
-  
-      @media (max-width: 600px) {
-        .column {
-          flex: 25%;
-          max-width: 25%;
-        }
-      }
-  
-      @media screen and (max-width:768px) {
-        .mobile_view {
-          display: none;
-        }
-  
-        
       }
