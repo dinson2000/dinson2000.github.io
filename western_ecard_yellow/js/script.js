@@ -75,7 +75,7 @@ btn.addEventListener('click', function () {
   box.classList.toggle('visible');
 }, false);
 
-var countDownDate = new Date("Mar 1, 2021 15:37:25").getTime();
+var countDownDate = new Date("Mar 25, 2021 15:37:25").getTime();
 
 var x = setInterval(function () {
 
