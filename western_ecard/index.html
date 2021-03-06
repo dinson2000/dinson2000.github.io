@@ -226,33 +226,32 @@
     <a style="font-size: 22px;font-family: myFont;color: black;text-decoration: none;" href="tel:9351758536"><p class="m-0 d-inline font-weight-bold">,&nbsp;9351758536</p></a>
   </div>
   <script>
+    // Back button disabaled
 
-    window.onload = function () {
+    
+    // window.onload = function () {
+    //   if (typeof history.pushState === "function") {
+    //     history.pushState("jibberish", null, null);
 
-
-      if (typeof history.pushState === "function") {
-        history.pushState("jibberish", null, null);
-
-        window.onpopstate = function () {
-          history.pushState('newjibberish', null, null);
-
-
-        };
-      }
-      else {
-        var ignoreHashChange = true;
-        window.onhashchange = function () {
-          if (!ignoreHashChange) {
-            ignoreHashChange = true;
-            window.location.hash = Math.random();
-          }
-          else {
-            ignoreHashChange = false;
-          }
-        };
-      }
-    }
+    //     window.onpopstate = function () {
+    //       history.pushState('newjibberish', null, null);
+    //     };
+    //   }
+    //   else {
+    //     var ignoreHashChange = true;
+    //     window.onhashchange = function () {
+    //       if (!ignoreHashChange) {
+    //         ignoreHashChange = true;
+    //         window.location.hash = Math.random();
+    //       }
+    //       else {
+    //         ignoreHashChange = false;
+    //       }
+    //     };
+    //   }
+    // }
  
+
     w3.slideshow(".slide_show", 3000);
   </script>
 

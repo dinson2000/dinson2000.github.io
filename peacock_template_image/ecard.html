@@ -380,28 +380,16 @@
 </div>
 </div>
 <script>
-//   $(document).ready(function(){
-//   $("#download_card").click(function(){
-//     $("#exampleModal0").modal({backdrop: true});
-//   });
-// });
 
     function call_modal(dataTarget){
   $(document).ready(function(){
     $(dataTarget).modal();
    
-// });
-    // }
-
-
-
-//  window.onload = function () {  
-
     if (typeof history.pushState === "function") {
         history.pushState("jibberish", null, null);  
 
         window.onpopstate = function () {
-            history.pushState('newjibberish', null, null);
+            // history.pushState('newjibberish', null, null);
            
     $(dataTarget).modal('hide');  
         };
