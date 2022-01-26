@@ -1,0 +1,293 @@
+#body{
+  display: none;
+}
+.body1{
+  display: block;
+}
+    @font-face {
+        font-family: "myFont";
+        src: url("../font/GreatVibes-Regular.otf");
+      }
+      .stop-scrolling { 
+        height: 100%; 
+        overflow: hidden; 
+    } 
+      #back_g {
+        background-image: url("../images/main_background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* touch-action: none; */
+        display: none;
+  
+      }
+  
+      .touch {
+        touch-action: none;
+      }
+  
+      .main_div {
+        background-image: url("../images/main_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 8px solid #FDADC8;
+        border-bottom: 8px solid #FDADC8;
+        position: fixed;
+        z-index: 100;
+        bottom: 0px;
+        left: 0;
+        
+        display: block;
+        transition: all 1s linear;
+  
+  
+      }
+  
+      .main_div p {
+        font-size: 20px;
+      }
+  
+      @keyframes animation {
+        0% {
+          bottom: 0px;
+        }
+  
+        100% {
+          bottom: 200px;
+        }
+      }
+  
+      @keyframes animation1 {
+        0% {
+          opacity: 0%;
+        }
+  
+        100% {
+          opacity: 100%;
+        }
+      }
+  
+      .hidden {
+        display: none;
+  
+      }
+  
+      .visuallyhidden {
+        opacity: 0;
+        animation-duration: 1s;
+        animation-name: animation;
+      }
+  
+      .main_btn {
+        border-radius: 20px;
+        background-color: #FDADC8;
+      }
+  
+      .box {
+        display: none;
+      }
+  
+      .visible {
+        display: block;
+        border-top: 7px solid #FDADC8;
+        animation-name: animation1;
+        animation-duration: 3s;
+        height: 200px;
+  
+      }
+  
+      .border_style {
+        border-bottom: 2px solid #FDADC8;
+      }
+  
+      .style_color {
+        color: rgb(230, 127, 199);
+      }
+  
+      .style_color1 {
+        color: rgba(165, 4, 120, 0.768);
+        font-size: 40px;
+        font-family: myFont;
+      }
+      .style_color2 {
+        color: rgba(165, 4, 120, 0.768);
+        font-size: 40px;
+        /* font-family: myFont; */
+      }
+  
+      .animated {
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+        animation-delay: 1.5s;
+      }
+  
+      @keyframes zoomIn {
+        0% {
+          opacity: 0;
+          transform: scale3d(.3, .3, .3);
+        }
+  
+        50% {
+          opacity: 1;
+        }
+      }
+  
+      .zoomIn {
+        animation-name: zoomIn;
+      }
+  
+      .image_size {
+        height: 200px;
+        max-width: 200px;
+        width: 100%;
+      }
+  
+      .border_div {
+        border: 2px solid #d1ac06;
+        width: 100%;
+        border-radius: 0px 0px 30px 30px;
+      }
+  
+      .border_div1 {
+        width: 75vw;
+        position: relative;
+        top: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 110px;
+        border-radius: 0px 0px 30px 30px;
+        margin: auto;
+        background-color: #F7AEC9;
+      }
+  
+      .border_div2 {
+        display: flex;
+        justify-content: flex-end;
+  
+      }
+  
+      .size {
+        font-size: 35px;
+        color: #915200;
+      }
+  
+      .size1 {
+        font-size: 22px;
+        color: #915200;
+        font-weight: bold;
+        font-family:myFont;
+      }
+  
+      .location {
+        font-size: 27px;
+      }
+  
+      .fa-volume-up {
+        font-size: 25px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 15%;
+        left: 10%;
+        z-index: 999;
+  
+      }
+  
+      .fa-volume-mute {
+        font-size: 25px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 15%;
+        left: 10%;
+        z-index: 999;
+  
+      }
+  
+      #sound_icon.sound_button_none {
+        display: none;
+      }
+  
+      #sound_icon.sound_button_visible {
+        display: inline-block;
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        box-sizing: border-box;
+      }
+  
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        box-sizing: border-box;
+  
+      }
+  
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+  
+      .responsive {
+        /* height: 80vw; */
+        height: 200px;
+        max-height: 500px;
+        max-width: 90vw;
+        width: 100%;
+        border-radius: 10px;
+        border-bottom: 2px solid rgba(165, 4, 120, 0.768);
+        border-left: 2px solid rgba(165, 4, 120, 0.768);
+      }
+  
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 720px;
+      }
+      .event_font{
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .flex-container>div {
+        border: 4px solid #C64591;
+        height: 50%;
+        width: 100%;
+      }
+      .flex-container > div >p{
+        margin: 0px;
+      }
+      @media screen and (max-width:425px){
+        #body{
+          display: block;
+        }
+        .body1{
+          display: none;
+        }
+      }
+          @media (max-width: 600px) {
+            .column {
+              flex: 25%;
+              max-width: 25%;
+            }
+          }
+      
+          @media screen and (max-width:768px) {
+            .mobile_view {
+              display: none;
+            }
+      
+            
+          }
+      @media (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }

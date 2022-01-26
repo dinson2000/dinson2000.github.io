@@ -1,0 +1,126 @@
+.body2{
+  display: none;
+}
+.body1{
+  display: block;
+}
+body{
+  background-color: white;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 18%;
+  left: 42%;
+}
+.bottom-left1 {
+  position: absolute;
+  bottom: 14%;
+  left: 32%;
+}
+.top-left0{
+  position:absolute;
+  top:16%;
+  
+  font-size: 7vw;
+}
+.top-left1 {
+  position: absolute;
+  top: 22%;
+  left: 36%;
+}
+.top-left2 {
+  position: absolute;
+  top: 28%;
+  left: 37.63%;
+}
+.centered {
+  position: absolute;
+  top: 42%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered3 {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.text {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.purple {
+  color: #3DA297;
+}
+.pink {
+  color: white;
+}
+.event_name{
+  color:#D49962;
+  font-size:50px;
+  position: absolute;
+  top:26%;
+  left:20%;
+}
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("GreatVibes-Regular.otf");
+}
+
+@media screen and (max-width:425px){
+
+  body{
+    background-image: url('../background/background.png');
+    font-family:myFirstFont;
+    background-position: center;
+     background-size:100vw 100%;
+  }
+.body2{
+  display: block;
+}
+.body1{
+  display: none;
+}
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  background: black;
+  color: #fff;
+  line-height: 1.7;
+}
+.slider-container {
+  height: 100vh;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: all 0.3s ease-out;
+  cursor: grab;
+}
+.slide {
+  max-height: 100vh;
+  width: 100vw;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding: 1rem;
+  user-select: none;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: black;
+  padding: 12px 55px;
+  transition: 0.5s all;
+}
+.btn:hover {
+  color: black;
+  background: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+}
+.get {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  background: orange;
+  margin: 20px 0;
+}
+.title {
+  color: aqua;
+  text-decoration: none;
+}
+.about {
+  text-align: center;
+}
+main {
+  text-align: center;
+}
+#img {
+  visibility: hidden;
+}

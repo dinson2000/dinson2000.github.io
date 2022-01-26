@@ -1,0 +1,13 @@
+Fonts used in this design:
+
+Font: Alegreya
+Author: Juan Pablo del Peral
+Url: http://www.fontsquirrel.com/fonts/alegreya
+
+Font: FoglihtenNo07
+Author: GLUK fonts
+Url: http://www.fontsquirrel.com/fonts/foglihtenno07
+
+Font: Herr Von Muellerhoff
+Author: Sudtipos
+Url: http://www.fontsquirrel.com/fonts/herr-von-muellerhoff
