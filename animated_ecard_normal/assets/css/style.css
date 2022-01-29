@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
 }
 
 .swiper {
@@ -92,7 +91,7 @@ body {
   width: 100%;
 }
 .page-image {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-size: 100% 100%;
 }
@@ -103,7 +102,7 @@ body {
   font-size: 25px;
   cursor: pointer;
   position: fixed;
-  bottom: 15%;
+  bottom: 25px;
   left: 10%;
   z-index: 999;
 }
@@ -112,7 +111,7 @@ body {
   font-size: 25px;
   cursor: pointer;
   position: fixed;
-  bottom: 15%;
+  bottom: 25px;
   left: 10%;
   z-index: 999;
 }

@@ -17,11 +17,13 @@ function indicator1() {
   playAudio();
   // },2300)
 }
-
+var height=screen.height;
+var screenPercent=(height*10)/100;
+height=height-screenPercent;
 const pageFlip = new St.PageFlip(document.getElementById("example"), {
   // options here
   width: screen.width,
-  height: screen.height,
+  height: height,
   //   size:stretch,
   //   showCover:true,
   //   mobileScrollSupport:false
