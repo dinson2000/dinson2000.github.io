@@ -39,9 +39,42 @@
       
 
     <div class="flip-book" id="example">
-      <div style="position: fixed;bottom:0;right:0;">
-        <img src="./assets/images/programming.gif" style="width:180px;height:170px;" alt="">
-      </div>
+      <div class="page" data-density="soft">
+        <div class="page-content">
+          <div class="page-image" id="flowers" style="background-image: url('./assets/images/mandap2.png');"></div>
+          <script>
+            var sakura = new Sakura('#example', {
+              colors: [
+                {
+                  gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+                  gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+                  gradientColorDegree: 120,
+                },
+                {
+                  gradientColorStart: 'rgba(255,189,189)',
+                  gradientColorEnd: 'rgba(227,170,181)',
+                  gradientColorDegree: 120,
+                },
+                {
+                  gradientColorStart: 'rgba(212,152,163)',
+                  gradientColorEnd: 'rgba(242,185,196)',
+                  gradientColorDegree: 120,
+                },
+              ],
+              delay: 100,
+            });
+          </script>
+          <div class="alignedText" style="top:34%;right:11%;">
+          <img src="./assets/images/programming.gif" style="width:200px;height:250px;" alt="">
+            </div>
+            <div class="alignedText" style="top:75%;right:22%;perspective:72px;padding:0 108px;">
+              <div class="zoomIn nameFont" style="font-size: 22px;padding:0 0px;position: absolute;transform-style: preserve-3d;transform: rotateX(30deg);">
+                Welcome to the grand wedding ceremony of Jalan Family
+              </div>
+            </div>
+            
+        </div>
+        </div>
       <div class="page" data-density="soft">
         <div class="page-content">
           <div class="page-image" style="background-image: url('./assets/images/31.jpg');"></div>

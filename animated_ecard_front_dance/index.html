@@ -11,10 +11,9 @@
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="assets/css/cloud.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="dist/sakura.css" />
-    <script src="dist/sakura.js" text="text/javascript"></script>
+    <link rel="stylesheet" href="assets/css/sakura.css" />
+    <script src="assets/js/sakura.js" text="text/javascript"></script>
 
 
     <style>
@@ -24,16 +23,16 @@
       
     </style>
   </head>
-  <body onload="indicator()" style="padding:0;margin:0px;box-sizing:border-box;">
-    <div class="excludingMobile" style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-align:center;">
-      <h2 class="">
+  <body onload="indicator()">
+    <div class="excludingMobile">
+      <h2>
         This application is only mobile supported.
       </h2>
     </div>
     <div id="mobileOnly" class="container">
-      <div id="indicator" onclick="indicator1()" style="position:fixed;top:0;left:0;z-index:500;background-color:black;opacity:0.7;background-size:cover;width: 100%;height: 100%;">
-        <div class="animatedIndicator" style="position: absolute;top: 35%;left:55%;opacity:0.5;background-image: url(./assets/images/touch4.png);background-size: 100% 100%;z-index: 1000;width: 100px;height:110px;">
-          <p style="color:white;position: absolute;bottom: -35px;right:0px;">Swipe For More</p>
+      <div id="indicator" onclick="indicator1()">
+        <div class="animatedIndicator">
+          <p>Swipe For More</p>
         </div>
       </div>
 
@@ -41,31 +40,8 @@
 
     <div class="flip-book" id="example">
       <div class="page" data-density="soft">
-        <div class="page-content" style="height:100%;width:100%;">
-          <div class="page-image" id="flowers" style="height:100%;width:100%;background-image: url('./assets/images/mandap2.png');background-size: 100% 100%;"></div>
-          <!-- <div  id="background-wrap">
-            <div class="x1">
-                <div class="cloud"></div>
-            </div><div class="x1">
-                <div class="cloud"></div>
-            </div> -->
-        
-            <!-- <div class="x2">
-                <div class="cloud"></div>
-            </div>
-        
-            <div class="x3">
-                <div class="cloud"></div>
-            </div> -->
-        
-            <!-- <div class="x4">
-                <div class="cloud"></div>
-            </div>
-        
-            <div class="x5">
-                <div class="cloud"></div>
-            </div> -->
-        <!-- </div> -->
+        <div class="page-content">
+          <div class="page-image" id="flowers" style="background-image: url('./assets/images/mandap2.png');"></div>
           <script>
             var sakura = new Sakura('#example', {
               colors: [
@@ -90,23 +66,18 @@
           </script>
           <div class="alignedText" style="top:34%;right:11%;">
           <img src="./assets/images/programming.gif" style="width:200px;height:250px;" alt="">
-           
-        </div>  
-            <div class="alignedText" style="top:75%;right:22%;perspective:72px;padding:0 108px;">
-              <div class="zoomIn nameFont" style="font-size: 22px;padding:0 0px;position: absolute;transform-style: preserve-3d;transform: rotateX(30deg);">
-                Welcome to the grand wedding ceremony of Jalan Family
-              </div>
             </div>
+            
         </div>
         </div>
       <div class="page" data-density="soft">
-        <div class="page-content" style="height:100%;width:100%;">
-          <div class="page-image" style="height:100%;width:100%;background-image: url('./assets/images/20.jpg');background-size: 100% 100%;"></div>
+        <div class="page-content">
+          <div class="page-image" style="background-image: url('./assets/images/31.jpg');"></div>
           <div class="alignedText" style="top:12%;">
             <div>
               <img src="./assets/images/ganeshJiLogo.png" style="width: 56px;height: 70px;" alt="">
             </div> 
-            <div style="color: maroon;font-weight:600;margin-top: 10px;" class="zoomIn">
+            <div style="font-weight:600;margin-top: 10px;" class="zoomIn maroon">
               || श्री गणेशाय नमः || <br><br> वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br> निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
             </div> 
             <div  style="margin-top:20px;">
@@ -114,29 +85,26 @@
             </div> 
             <div style="margin-top:20px;display:flex;flex-direction:column ;align-items: center;justify-content: center;">
               <div>
-                <!-- <img src="./assets/images/groom.jpg" style="border-radius:50%;height:110px;width:110px;" alt=""> -->
                 <div class="nameFont">Angel</div>
               </div>
               <div class="zoomIn nameFont" style="font-size: 30px;">
                 Weds
               </div>
               <div>
-                <!-- <img src="./assets/images/bride.jpg" style="border-radius:50%;height:110px;width:110px;" alt=""> -->
                <div class="nameFont"> Anshu</div>
               </div>
               <div style="margin-top:10px;">
-                <!-- <img src="./assets/images/bride.jpg" style="border-radius:50%;height:110px;width:110px;" alt=""> -->
-               <div style="font-family:cursive;font-size: 20px;color: maroon;" class="">20 Dec, 2021</div>
+                <div style="font-family:cursive;font-size: 20px;" class="maroon">20 Dec, 2021</div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="page" data-density="soft">
-        <div class="page-content" style="height:100%;width:100%;">
-          <div class="page-image" style="height:100%;width:100%;background-image: url('./assets/images/32.jpeg');background-size: 100% 100%;"></div>
+        <div class="page-content">
+          <div class="page-image" style="background-image: url('./assets/images/32.jpeg');"></div>
           <div class="alignedText" style="top:20%;">
-            <div style="text-align: center;" style="font-size: 10px;color: maroon;" class="">
+            <div style="font-size: 10px;text-align: center;" class="maroon">
               <p style="margin-bottom:20px;font-weight: 600;font-size: 20px;">JALAN FAMILY</p>
               <p style="margin:0;">requests your presence</p>
               <p style="margin:0;">on the auspicious wedding of</p>
@@ -148,7 +116,7 @@
               </div> 
           </div>
           <div  >
-            <div style="text-align: center;" style="font-size: 2px;color: maroon;" class="">
+            <div style="text-align: center;" class="maroon">
               <p>(D/O SMT.KUSUM(RUpali) & sri akash jalan)</p>
               <p>(maternal grand d/o Smt. sita devi</p>
               <p>& sri ratan la ji agarwal)</p>
@@ -156,7 +124,7 @@
             </div> 
           </div>
           <div >
-            <div style="text-align: center;font-size: 17px;color: maroon;margin-bottom: 15px;margin-top: 15px;" class="">
+            <div style="text-align: center;font-size: 17px;margin-bottom: 15px;margin-top: 15px;" class="maroon">
               With
             </div> 
         </div>
@@ -166,7 +134,7 @@
             </div> 
         </div>
           <div >
-            <div style="text-align: center;" style="font-size: 2px;color: maroon;" class="">
+            <div style="text-align: center;" class="maroon">
               <p>(D/O SMT.KUSUM(RUpali) & sri akash jalan)</p>
               <p>(maternal grand d/o Smt. sita devi</p>
               <p>& sri ratan la ji agarwal)</p>
@@ -179,8 +147,8 @@
         </div>
       </div>
       <div class="page" data-density="soft">
-        <div class="page-content" style="height:100%;width:100%;">
-          <div class="page-image" style="height:100%;width:100%;background-image: url('./assets/images/33.jpeg');background-size: 100% 100%;"></div>
+        <div class="page-content">
+          <div class="page-image" style="background-image: url('./assets/images/33.jpeg');"></div>
           <div class="alignedText" style="top:25%">
             <div style="text-align: center;" class="nameFont zoomIn">
               Varmala
@@ -196,11 +164,11 @@
               </div> 
           </div>
           <div>
-            <div style="text-align: center;" style="font-size: 10px;color: maroon;" class="">
+            <div style="text-align: center;" class="maroon">
               <p style="margin:0;font-size: 16px;">Tuesday, 30th Nov, 2021</p>
               <p style="margin-bottom:10px;font-size: 16px;">6:00 PM, ONWARDS</p>
               <a href="https://www.google.com/maps/place/Jal+Mahal,+Amer,+Jaipur,+Rajasthan/@26.9649637,75.8339699,14z/data=!3m1!4b1!4m9!1m2!2m1!1sjalmahal!3m5!1s0x396db10189be64eb:0x9366ee1922c4a947!8m2!3d26.9656063!4d75.8592063!15sCghqYWxtYWhhbFoKIghqYWxtYWhhbJIBDHN1YmxvY2FsaXR5Mg" 
-              style="text-decoration: underline;color: maroon;font-weight: 600;font-size:18px;margin-top: 40px;"><i class="fas fa-map-marker-alt"></i> CHAAR BAGH</a>
+              style="text-decoration: underline;font-weight: 600;font-size:18px;margin-top: 40px;" class="maroon"><i class="fas fa-map-marker-alt"></i> CHAAR BAGH</a>
               
             </div> 
           </div>
@@ -208,17 +176,17 @@
         </div>
       </div>
       <div class="page" data-density="soft">
-        <div class="page-content" style="height:100%;width:100%;">
-          <div class="page-image" style="height:100%;width:100%;background-image: url('./assets/images/34.jpeg');background-size: 100% 100%;"></div>
+        <div class="page-content">
+          <div class="page-image" style="background-image: url('./assets/images/34.jpeg');"></div>
           <div class="alignedText" style="top:23%;">
             <div style="text-align: center;" class="nameFont zoomIn">
               Reception
             </div>
-            <div style="text-align: center;margin-top: 8px;font-size: 10px;color: maroon;" class="">
+            <div style="text-align: center;margin-top: 8px;font-size: 10px;" class="maroon">
               <p style="margin:0;font-size: 16px;">Monday, 29th Nov, 2021</p>
               <p style="margin-bottom:10px;font-size: 16px;">6:00 PM, ONWARDS</p>
               <a href="https://www.google.com/maps/place/Jal+Mahal,+Amer,+Jaipur,+Rajasthan/@26.9649637,75.8339699,14z/data=!3m1!4b1!4m9!1m2!2m1!1sjalmahal!3m5!1s0x396db10189be64eb:0x9366ee1922c4a947!8m2!3d26.9656063!4d75.8592063!15sCghqYWxtYWhhbFoKIghqYWxtYWhhbJIBDHN1YmxvY2FsaXR5Mg" 
-              style="text-decoration: underline;color: maroon;font-weight: 600;font-size:18px;margin-top: 40px;"><i class="fas fa-map-marker-alt"></i> CHAAR BAGH</a>
+              style="text-decoration: underline;font-weight: 600;font-size:18px;margin-top: 40px;" class="maroon"><i class="fas fa-map-marker-alt"></i> CHAAR BAGH</a>
               
             </div> 
             
@@ -226,11 +194,11 @@
               <div style="text-align: center;margin-top: 20px;" class="nameFont zoomIn">
                 Sangeet
               </div> 
-              <div style="text-align: center;margin-top: 8px;font-size: 10px;color: maroon;" class="">
+              <div style="text-align: center;margin-top: 8px;font-size: 10px;" class="maroon">
                 <p style="margin:0;font-size: 16px;">Tuesday, 30th Nov, 2021</p>
                 <p style="margin-bottom:10px;font-size: 16px;">8:30 PM, ONWARDS</p>
                 <a href="https://www.google.com/maps/place/Jal+Mahal,+Amer,+Jaipur,+Rajasthan/@26.9649637,75.8339699,14z/data=!3m1!4b1!4m9!1m2!2m1!1sjalmahal!3m5!1s0x396db10189be64eb:0x9366ee1922c4a947!8m2!3d26.9656063!4d75.8592063!15sCghqYWxtYWhhbFoKIghqYWxtYWhhbJIBDHN1YmxvY2FsaXR5Mg" 
-                style="text-decoration: underline;color: maroon;font-weight: 600;font-size:18px;margin-top: 40px;"><i class="fas fa-map-marker-alt"></i> SHIKAAR BAGH</a>
+                style="text-decoration: underline;font-weight: 600;font-size:18px;margin-top: 40px;" class="maroon"><i class="fas fa-map-marker-alt"></i> SHIKAAR BAGH</a>
                 
               </div> 
               
@@ -240,8 +208,8 @@
       </div>
      
       <div class="page" data-density="soft">
-        <div class="page-content" style="height:100%;width:100%;">
-          <div class="page-image" style="height:100%;width:100%;background-image: url('./assets/images/35.jpeg');background-size: 100% 100%;"></div>
+        <div class="page-content">
+          <div class="page-image" style="background-image: url('./assets/images/35.jpeg');"></div>
           <div class="alignedText" style="top:24%">
             <div class="container-fluid mt-4">
               <div class="text-center">
@@ -273,7 +241,7 @@
             <div style="text-align: center;margin-top:10px;font-size: 14px;color: black;" class="">
               In warm expectations & blessings
             </div> 
-            <div style="margin-top:5px;margin-bottom:5px;text-align: center;font-size: 35px;letter-spacing: 0;" class="nameFont zoomIn">
+            <div style="text-align: center;margin-top:5px;margin-bottom:5px;font-size: 35px;letter-spacing: 0;" class="nameFont zoomIn">
               Jalan & Agarwal 
             </div> 
               <div style="margin-bottom:10px;text-align: center;font-size: 14px;letter-spacing: 0;color:black;" class="zoomIn">
@@ -286,14 +254,14 @@
               <img class="slide_show responsive mx-auto" src="./assets/images/w_4.jpg" alt="">
             </div>
             <div style="text-align:center;margin-top: 20px;">
-              <span><a href="tel:+919351758536" style="display:inline!important;font-size:14px;font-weight:600;display:block;color: maroon;text-decoration: none;"><i class="fas fa-phone-alt"></i>&nbsp;9351758536</a></span>
-              <a href="tel:+917597241244" style="display:inline!important;font-size:14px;font-weight:600;display:block;color: maroon;text-decoration: none;">,&nbsp;7597241244</a>
+              <span><a href="tel:+919351758536" class="maroon contactLinks"><i class="fas fa-phone-alt"></i>&nbsp;9351758536</a></span>
+              <a href="tel:+917597241244" class="maroon contactLinks">,&nbsp;7597241244</a>
             </div>
             
         </div>
         </div>
       </div>
-      
+     
       </div>
       
     </div>
